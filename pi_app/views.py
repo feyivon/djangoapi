@@ -73,8 +73,6 @@ class CategoryDeleteEndpoint(generics.DestroyAPIView):
     lookup_field='pk'
     
 
-
-
 class ProductDetailEndpoint(APIView):
     def get_object(self, pk):
         try:
@@ -103,7 +101,7 @@ class ProductDetailEndpoint(APIView):
         product.delete()
         return Response({'message':'product deleted succesfully'}, status=status.HTTP_200_OK)
     
-class UserRegisterEndpoint(generics.CreateAPIView):
-    queryset=User.objects.all()
-    permission_classes=[permissions.AllowAny]
-    serializer_class=   UserCreationSerializer
+# class UserRegisterEndpoint(generics.CreateAPIView):
+#     queryset=User.objects.all()
+#     permission_classes=[permissions.AllowAny]
+#     serializer_class=   UserCreationSerializer
