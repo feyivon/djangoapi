@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['https://djangoapi-oiux.onrender.com', 'localhost']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
